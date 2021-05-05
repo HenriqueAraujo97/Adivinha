@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textViewTexto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/qual_o_n_mero_que_estou_a_pensar_entre_1_a_10"
+        android:textColor="#673AB7"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textViewNumero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="@string/n_mero"
+        android:textColor="#4CAF50"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editTextNumero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#FF5722"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/buttonAdivinha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:onClick="adivinhaNumero"
+        android:text="@string/adivinha"
+        android:textColor="#009688"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textViewPensar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        tools:text="O numero que estou a pensar....." />
+
+    <TextView
+        android:id="@+id/textViewTentativa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        tools:text="Tentativas:" />
+</LinearLayout>
